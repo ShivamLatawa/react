@@ -1,0 +1,14 @@
+.movie-list {
+    & .container {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        & .slick-next:before, .slick-prev:before {
+            color: #000;
+        }
+
+        & .load-more {
+            margin-top: 50px;
+        }
+    }
+}

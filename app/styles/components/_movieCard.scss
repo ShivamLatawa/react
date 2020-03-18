@@ -1,0 +1,86 @@
+.movie-card {
+    text-align: left;
+    margin: auto;
+
+    & .poster-container:hover {
+        & .add-to-favorites {
+            opacity: 0.8;
+            transition: all 1s ease;
+        }
+    }
+
+    & .add-to-favorites {
+        position: absolute;
+        top: 0;
+        color: white;
+        height: 300px;
+        width: 100%;
+        background-color: black;
+        opacity: 0;
+        padding-top: 135px;
+        text-align: center;
+        transition: all 1s ease;
+
+        & .add-to-favorites-text {
+            color: white;
+            cursor: pointer;
+            border: 1px solid white;
+            border-radius: 0;
+
+            &:hover {
+                background-color: #c02c39;
+                transition: all 0.5s ease;
+            }
+        }
+
+        & .marked-favorites-text {
+            color: #49ba8e;
+            border: 1px solid #49ba8e;
+            border-radius: 0;
+        }
+    }
+
+    & .movie-poster {
+        height: 300px;
+        width: 100%;
+        display: block;
+    }
+
+    & .card-text-title {
+        font-size: 16px;
+        font-weight: 400;
+        color: #333;
+    }
+
+    & .card-text {
+        color: #666;
+        font-size: 12px;
+    }
+
+    & .card-text-type {
+        display: inline-block;
+        background-color: #f4f4f4;
+        padding: 2px 7px;
+        border: 1px solid #dfdfdf;
+        border-radius: 10px;
+        margin: 10px 2px 5px 0;
+        color: #999;
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+}
+
+.favorites {
+    & .customStyle {
+        height: 415px;
+        width: 320px;
+        text-align: left;
+        display: inline-block;
+        margin-right: 70px;
+    }
+
+    & .add-to-favorites {
+        display: none !important;
+    }
+}
+

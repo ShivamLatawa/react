@@ -1,0 +1,15 @@
+.navbar-brand {
+  margin-right: 5rem;
+}
+
+.jumbotron {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 0;
+  background: #000 ;
+  &.with-bg {
+    background: linear-gradient(to right, #000 40%, transparent 58%), url('https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-mag1-30jan._CB1517304539_SY1200_FMJPG_.jpg');;
+  }
+}
